@@ -1941,6 +1941,9 @@ h4.boxer_info{
 	color: black;
 }
 
+#fight .alignleft{
+	margin-right: 1em;
+}
 /*Random Fixes*/
 .image-rotator .image_thumb ul li{
 	width: 354px;
@@ -1958,4 +1961,5 @@ h4.boxer_info{
 div#first.widget-area, div#second.widget-area{
 	margin-left: 4%;
 }
+
 
