@@ -159,8 +159,7 @@ textarea {
 /* HEADERS */
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Oswald', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight: normal;
+	font-family: SteelfishRgRegular, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;	font-weight: normal;
 	margin: 0 0 0.5em;
 }
 div.entry-title,
@@ -1826,12 +1825,11 @@ input[type="submit"]:hover {
 .fighter{
 	overflow: hidden;
 	background-color: black;
-/*	box-shadow: inset 0px 0px 21px 8px grey;
-*/	color: white;
+	color: white;
 	border-radius: 5px;
 	text-align: center;
 	margin: 5px;
-	font-family: SteelfishRgRegular, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: 'Oswald', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
 }
 .fighter p{
 	padding-left: 5px;
@@ -1842,7 +1840,6 @@ input[type="submit"]:hover {
 .fighter img{
 	border: 3px solid white;
 	max-width: 100%;
-	/*max-height: 50%;*/
 }
 .fighter_one_outer{
 	float: left;
@@ -1855,7 +1852,6 @@ input[type="submit"]:hover {
 .fighter_inner{
 	width: 80%;
 	margin: 10%;
-	/*margin: 25px;*/
 }
 #fight .wdf_fundraiser_panel{
 	float: left;
@@ -1882,11 +1878,15 @@ input[type="submit"]:hover {
 .fighter h4{
 	text-align: left;
 	padding: 0px 30px;
-	font-size: 1.9em;
+	font-size: 1.6em;
+	font-family: 'Oswald', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.fighter h3{
+	font-family: 'Oswald', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 1.6em;
 }
 .fighter .glyphicon-user{
 	text-align: left;
-	/*margin-left: 30px;*/
 	margin-top: 10px;
 	margin-bottom: 10px;
 	width: 100%;
@@ -1941,7 +1941,21 @@ h4.boxer_info{
 	color: black;
 }
 
+/*Random Fixes*/
+.image-rotator .image_thumb ul li{
+	width: 354px;
+	height: 72px;
+}
 
+#menu-main li a{
+	height: 100%;
+}
 
+#footer-logo{
+	margin-left: 2%;
+}
 
+div#first.widget-area, div#second.widget-area{
+	margin-left: 4%;
+}
 
