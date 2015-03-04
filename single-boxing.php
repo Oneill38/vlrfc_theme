@@ -32,7 +32,7 @@ get_header(); ?>
 	      			
 	      			<h1 class="fight_title">
 	      				<div class="boxer_name_title"><?php echo $name ?></div>
-	      				<img id="versus" src="wp-content/themes/vlrfc_theme/images/versus.png">
+	      				<img id ="versus" src="<?php bloginfo('template_directory'); ?>/images/versus.png" alt="versus" />
 	      				<div class="boxer_name_title"><?php echo $name_two ?></div>
 	      			</h1>
 
