@@ -308,6 +308,17 @@ function register_cpt_boxing() {
 	    require_once 'Custom-Metaboxes-and-Fields-for-WordPress-master/init.php';
 
 	}
+	
+	function get_custom_post_type_template($single_template) {
+	     global $post;
+	 
+	       if ($post->post_type == 'boxing') {
+	          $single_template = dirname( __FILE__ ) . '/boxing.php';
+	     }
+	     return $single_template;
+	}
+	 
+	add_filter( "single_template", "get_custom_post_type_template" ) ;
 
 
 

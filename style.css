@@ -1822,6 +1822,9 @@ input[type="submit"]:hover {
 .single-boxing .featured-image img {
 	margin-left: -15px;
 }
+.page-id-2333 .featured-image img{
+	margin-left: -15px;
+}
 .fighter{
 	overflow: hidden;
 	background-color: black;
@@ -1920,6 +1923,16 @@ h4.boxer_info{
 
 #fight .wdf_goal_progress{
 	display: none;
+}
+.page-id-2333 .wdf_goal_progress{
+	display: block;
+	margin-bottom: 15px;
+}
+.page-id-2333 .wdf_goal{
+	display: block;
+}
+.wdf_pledge_amount{
+	color: black;
 }
 #fight .wdf_goal{
 	font-size: 1.385em;
