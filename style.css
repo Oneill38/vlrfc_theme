@@ -1960,6 +1960,14 @@ h4.boxer_info{
 #fight .alignleft{
 	margin-right: 5px;
 }
+
+#disclaimer {
+	/*margin-left: 5%;*/
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+
 /*Random Fixes*/
 .image-rotator .image_thumb ul li{
 	width: 354px;
