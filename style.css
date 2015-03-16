@@ -1834,6 +1834,10 @@ input[type="submit"]:hover {
 	margin: 5px;
 	font-family: 'Oswald', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
 }
+div .stats_header{
+	font-family: 'Oswald', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+	display: inline-block;
+}
 .fighter p{
 	padding-left: 5px;
 	padding-right: 5px;
@@ -1871,8 +1875,8 @@ input[type="submit"]:hover {
 	font-size: 2.923em;
 }
 #versus{
-	height: 122px;
-	width: 125px;
+	height: 72px;
+	width: 75px;
 }
 .boxer_name, .boxer_height{
 	margin-bottom: 5px;

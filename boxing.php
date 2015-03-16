@@ -39,7 +39,7 @@ get_header(); ?>
 		      				<h3 class="boxer_name alignleft"><?php echo $name; ?></h3>
 		      				<h3 class="boxer_height alignright"><?php echo $height; ?></h3>
 		      				<img src="<?php echo $pic ?>">
-		      				<h3><span class="glyphicon glyphicon-user">Stats</span></h3>
+		      				<h3><span class="glyphicon glyphicon-user"><div class="stats_header">Stats</div></span></h3>
 		      				<?php 
 		      					if($weight){ echo '<h4 class="boxer_info"><span class="color_me_red">Weight:</span> ' . $weight . '</h4>' ;} 
 		      					if($hometown){ echo '<h4 class="boxer_info"><span class="color_me_red">Hometown:</span> ' . $hometown . '</h4>' ;} 
@@ -55,7 +55,7 @@ get_header(); ?>
 									<h3 class="boxer_name alignleft"><?php echo $name_two; ?></h3>
 		      				<h3 class="boxer_height alignright"><?php echo $height_two; ?></h3>
 		      				<img src="<?php echo $pic_two ?>">
-		      				<h3><span class="glyphicon glyphicon-user">Stats</span></h3>
+		      				<h3><span class="glyphicon glyphicon-user"><div class="stats_header">Stats</div></span></h3>
 		      				<?php 
 		      					if($weight_two){ echo '<h4 class="boxer_info"><span class="color_me_red">Weight:</span> ' . $weight_two . '</h4>' ;} 
 		      					if($hometown_two){ echo '<h4 class="boxer_info"><span class="color_me_red">Hometown:</span> ' . $hometown_two . '</h4>' ;} 
