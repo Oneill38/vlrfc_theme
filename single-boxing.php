@@ -38,9 +38,13 @@ get_header(); ?>
 
 	      			<div class="fighter_one_outer col-sm-5 fighter">
 	      				<div class="fighter_inner">
-		      				<h3 class="boxer_name alignleft"><?php echo $name; ?></h3>
-		      				<h3 class="boxer_height alignright"><?php echo $height; ?></h3>
-		      				<img src="<?php echo $pic ?>">
+	      					<div class="col-xs-6">
+		      					<img src="<?php echo $pic ?>">
+	      					</div>
+	      					<div class="col-xs-6">
+		      					<h3 class="boxer_name "><?php echo $name; ?></h3>
+		      					<h3 class="boxer_height"><?php echo $height; ?></h3>
+	      					</div>
 		      				<h3><span class="glyphicon glyphicon-user">Stats</span></h3>
 		      				<?php 
 		      					if($weight){ echo '<h4 class="boxer_info"><span class="color_me_red">Weight:</span> ' . $weight . '</h4>' ;} 
@@ -54,9 +58,13 @@ get_header(); ?>
 	      			</div>
 	      			<div class="fighter_two_outer col-sm-5 fighter">
 								<div class="fighter_inner">
-									<h3 class="boxer_name alignleft"><?php echo $name_two; ?></h3>
-		      				<h3 class="boxer_height alignright"><?php echo $height_two; ?></h3>
-		      				<img src="<?php echo $pic_two ?>">
+									<div class="col-xs-6">
+				      					<img src="<?php echo $pic_two ?>">
+			      					</div>
+			      					<div class="col-xs-6">
+				      					<h3 class="boxer_name "><?php echo $name_two; ?></h3>
+				      					<h3 class="boxer_height"><?php echo $height_two; ?></h3>
+			      					</div>
 		      				<h3><span class="glyphicon glyphicon-user">Stats</span></h3>
 		      				<?php 
 		      					if($weight_two){ echo '<h4 class="boxer_info"><span class="color_me_red">Weight:</span> ' . $weight_two . '</h4>' ;} 

@@ -1827,8 +1827,6 @@ input[type="submit"]:hover {
 }
 .fighter{
 	overflow: hidden;
-	background-color: black;
-	color: white;
 	border-radius: 5px;
 	text-align: center;
 	margin: 5px;
@@ -1845,16 +1843,17 @@ div .stats_header{
 
 }
 .fighter img{
-	border: 3px solid white;
-	max-width: 100%;
+	border-radius: 50%;
 }
 .fighter_one_outer{
 	float: left;
 	padding: 0;
+	border: 2px solid #d3d3d3;
 }
 .fighter_two_outer{
 	float: right;
 	padding: 0;
+	border: 2px solid #d3d3d3;
 }
 .fighter_inner{
 	width: 80%;
@@ -1878,9 +1877,8 @@ div .stats_header{
 	height: 72px;
 	width: 75px;
 }
-.boxer_name, .boxer_height{
-	margin-bottom: 5px;
-	color: #dd0000;
+.boxer-info{
+	text-align: left;
 }
 .fighter h4{
 	text-align: left;
@@ -1969,6 +1967,11 @@ h4.boxer_info{
 	/*margin-left: 5%;*/
 	padding-left: 25px;
 	padding-right: 25px;
+}
+
+.boxing-top-bar{
+	content: black;
+	background-color: #d3d3d3;
 }
 
 
