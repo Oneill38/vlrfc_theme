@@ -1848,12 +1848,10 @@ div .stats_header{
 .fighter_one_outer{
 	float: left;
 	padding: 0;
-	border: 2px solid #d3d3d3;
 }
 .fighter_two_outer{
 	float: right;
 	padding: 0;
-	border: 2px solid #d3d3d3;
 }
 .fighter_inner{
 	width: 80%;
@@ -1867,8 +1865,8 @@ div .stats_header{
 	display: none;
 }
 #fight .wdf_goal{
-	display: none;
-}
+/*	display: none;
+*/}
 .single-boxing .entry-title{
 	text-align: center;
 	font-size: 2.923em;
@@ -1879,6 +1877,8 @@ div .stats_header{
 }
 .boxer-info{
 	text-align: left;
+	height: 100%;
+	padding-top: 30px;
 }
 .fighter h4{
 	text-align: left;
@@ -1972,8 +1972,31 @@ h4.boxer_info{
 .boxing-top-bar{
 	content: black;
 	background-color: #d3d3d3;
+	padding: 10px;
+}
+.boxer-bio{
+	background-color: #fafafa;
+	padding-bottom: 10px;
+}
+blockquote {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  border-left: none;
+}
+blockquote:before {
+  color: #dd0000;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
 }
 
+
+.boxer-bio hr{
+	border-top: 1px solid #d3d3d3;
+}
 
 /*Random Fixes*/
 .image-rotator .image_thumb ul li{

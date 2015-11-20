@@ -34,6 +34,12 @@ get_header(); ?>
 	      				<div class="boxer_name_title"><?php echo $name_two ?></div>
 	      			</h1>
 
+      				<div class="progress progress-striped col-xs-12">
+						<div class="progress-bar progress-bar-danger active" style="width: 0%;">
+							<span class="sr-only">0% Complete</span>
+						</div>
+					</div>
+
 	      			<div class="fighter_one_outer col-sm-5 fighter">
 	      					<div class="col-xs-12 boxing-top-bar">
 	      						<div class="col-xs-6">
@@ -45,11 +51,13 @@ get_header(); ?>
 		      					</div>
 	      					</div>
 
-	      					<div class="col-xs-12">
+	      					<div class="col-xs-12 boxer-bio">
 			      				<?php 
-			      					if($bio){ echo '<h4 class="boxer_info"><span class="color_me_red">Bio:</span>  ' . $bio . '</h4>' ;} 
+			      					if($bio){ echo '<blockquote>' . $bio . '</blockquote>' ;} 
 
 			      				?>
+			      				<hr>
+			      				<button class="btn btn-default">Donate to <?php echo $name; ?></button>
 	      					</div>
 		      				
 	      			</div>
@@ -64,18 +72,16 @@ get_header(); ?>
 	      					</div>
 						</div>
 
-      					<div class="col-xs-12">
+      					<div class="col-xs-12 boxer-bio">
 		      				<?php 
-		      					if($bio_two){ echo '<h4 class="boxer_info"><span class="color_me_red">Bio:</span> ' . $bio_two . '</h4>' ;} 
+		      					if($bio_two){ echo '<blockquote>' . $bio_two . '</blockquote>' ;} 
 		      				 ?>
+		      				 <hr>
+		      				 <button class="btn btn-default">Donate to <?php echo $name_two; ?></button>
       					</div>
 		      				
 	      			</div>
-	      			<div class="progress progress-striped col-xs-12">
-								<div class="progress-bar progress-bar-danger active" style="width: 0%;">
-								<span class="sr-only">0% Complete</span>
-							</div>
-						</div>
+
 	      	</div>
 		</div><!-- #container -->
 <?php comments_template( '', true ); ?>
