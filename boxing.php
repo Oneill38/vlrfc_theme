@@ -57,7 +57,9 @@ get_header(); ?>
 
 			      				?>
 			      				<hr>
-			      				<h3>Donate to <?php echo $name; ?></h3>
+			      				<div class="col-xs-12 donate_one">
+			      					<h3>Donate to <?php echo $name; ?></h3>
+			      				</div>
 	      					</div>
 		      				
 	      			</div>
@@ -77,7 +79,9 @@ get_header(); ?>
 		      					if($bio_two){ echo '<blockquote>' . $bio_two . '</blockquote>' ;} 
 		      				 ?>
 		      				 <hr>
-		      				 <h3>Donate to <?php echo $name_two; ?></h3>
+		      				 <div class="col-xs-12 donate_two">
+		      				 	<h3>Donate to <?php echo $name_two; ?></h3>
+		      				 </div>
       					</div>
 		      				
 	      			</div>
@@ -92,6 +96,7 @@ get_header(); ?>
 <script>
 	jQuery(document).ready(function(){
 		jQuery(".progress").before(jQuery("div .wdf_goal"));
+		
 		// get the progress percentage and set our progress bar to it
 		if( jQuery(".wdf_goal_progress").length > 1){
 			var val_one = parseInt(jQuery(".wdf_goal_progress").first().attr("total"));
@@ -105,14 +110,13 @@ get_header(); ?>
 			jQuery(".progress-bar-danger").width(percentage.concat("%"));
 		}
 
+		//move donation form to each boxers area
+		jQuery(".wdf_fundraiser_panel").last().appendTo(".donate_two");
+		jQuery(".wdf_fundraiser_panel").first().appendTo(".donate_one");
 
 		// move social media to after fighter
 		jQuery("#fight").after(jQuery(".twitter-share-button"));
 		jQuery("#fight").after(jQuery(".fb-like"));
-
-		//move fundraising panel to above progress bar
-		// jQuery(".progress").after(jQuery(".wdf_fundraiser_panel"));
-		// jQuery(".wdf_fundraiser_panel").after(jQuery(".progress"));
 
 		jQuery(".wdf_send_donation").val("Donate!");
 

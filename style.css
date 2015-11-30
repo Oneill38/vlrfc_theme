@@ -1857,10 +1857,7 @@ div .stats_header{
 	width: 80%;
 	margin: 10%;
 }
-#fight .wdf_fundraiser_panel{
-	float: left;
-	clear: left;
-}
+
 #fight .wdf_goal_progress{
 	display: none;
 }
