@@ -57,7 +57,7 @@ get_header(); ?>
 
 			      				?>
 			      				<hr>
-			      				<button class="btn btn-default boxer-donate">Donate to <?php echo $name; ?></button>
+			      				<h3>Donate to <?php echo $name; ?></h3>
 	      					</div>
 		      				
 	      			</div>
@@ -77,7 +77,7 @@ get_header(); ?>
 		      					if($bio_two){ echo '<blockquote>' . $bio_two . '</blockquote>' ;} 
 		      				 ?>
 		      				 <hr>
-		      				 <button class="btn btn-default boxer-donate">Donate to <?php echo $name_two; ?></button>
+		      				 <h3>Donate to <?php echo $name_two; ?></h3>
       					</div>
 		      				
 	      			</div>
@@ -94,11 +94,12 @@ get_header(); ?>
 		jQuery(".progress").before(jQuery("div .wdf_goal"));
 		// get the progress percentage and set our progress bar to it
 		if( jQuery(".wdf_goal_progress").length > 1){
-			var val_one = jQuery(".wdf_goal_progress").first().attr("total");
-			var val_two = jQuery(".wdf_goal_progress").last().attr("total");
-			var goal = jQuery(".wdf_goal_progress").first().attr("goal");
-			var total = (val_one + val_two)/goal;
-			jQuery(".progress-bar-danger").width(total);
+			var val_one = parseInt(jQuery(".wdf_goal_progress").first().attr("total"));
+			var val_two = parseInt(jQuery(".wdf_goal_progress").last().attr("total"));
+			var goal_one = parseInt(jQuery(".wdf_goal_progress").first().attr("goal"));
+			var goal_two = parseInt(jQuery(".wdf_goal_progress").last().attr("goal"));
+			var total = ((val_one + val_two)/(goal_one + goal_two)) * 100;
+			jQuery(".progress-bar-danger").width(total.toString().concat("%"));
 		}else{
 			var percentage = jQuery(".wdf_goal_progress").attr("aria-valuenow");
 			jQuery(".progress-bar-danger").width(percentage.concat("%"));
@@ -110,10 +111,10 @@ get_header(); ?>
 		jQuery("#fight").after(jQuery(".fb-like"));
 
 		//move fundraising panel to above progress bar
-		jQuery(".progress").after(jQuery(".wdf_fundraiser_panel"));
-		jQuery(".wdf_fundraiser_panel").after(jQuery(".progress"));
+		// jQuery(".progress").after(jQuery(".wdf_fundraiser_panel"));
+		// jQuery(".wdf_fundraiser_panel").after(jQuery(".progress"));
 
-		jQuery(".wdf_send_donation").val("Back These Boxers");
+		jQuery(".wdf_send_donation").val("Donate!");
 
 	});
 </script>

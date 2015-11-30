@@ -2003,10 +2003,11 @@ blockquote:after {
 .boxer-bio hr{
 	border-top: 1px solid #d3d3d3;
 }
-.boxer-donate{
-	background-color: #dd0000;
-    color: white;
+/* Hide items from fundraising pannel */
+.wdf_total_backers, .wdf_amount_raised, .wdf_time_left{
+	display: none;
 }
+
 
 /*Random Fixes*/
 .image-rotator .image_thumb ul li{
