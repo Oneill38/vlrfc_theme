@@ -29,9 +29,7 @@ get_header(); ?>
 	      		?>
 	      			
 	      			<h1 class="fight_title">
-	      				<div class="boxer_name_title"><?php echo $name ?></div>
-	      				<img id ="versus" src="<?php bloginfo('template_directory'); ?>/images/versus.png" alt="versus" />
-	      				<div class="boxer_name_title"><?php echo $name_two ?></div>
+	      				<div class="boxer_name_title"><?php echo $name ?> v.s. <?php echo $name_two ?></div>	
 	      			</h1>
 
       				<div class="progress progress-striped col-xs-12">
