@@ -1992,10 +1992,20 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-
-
+blockquote:after {
+  color: #dd0000;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.6em;
+}
 .boxer-bio hr{
 	border-top: 1px solid #d3d3d3;
+}
+.boxer-donate{
+	background-color: #dd0000;
+    color: white;
 }
 
 /*Random Fixes*/

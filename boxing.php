@@ -57,7 +57,7 @@ get_header(); ?>
 
 			      				?>
 			      				<hr>
-			      				<button class="btn btn-default">Donate to <?php echo $name; ?></button>
+			      				<button class="btn btn-default boxer-donate">Donate to <?php echo $name; ?></button>
 	      					</div>
 		      				
 	      			</div>
@@ -77,7 +77,7 @@ get_header(); ?>
 		      					if($bio_two){ echo '<blockquote>' . $bio_two . '</blockquote>' ;} 
 		      				 ?>
 		      				 <hr>
-		      				 <button class="btn btn-default">Donate to <?php echo $name_two; ?></button>
+		      				 <button class="btn btn-default boxer-donate">Donate to <?php echo $name_two; ?></button>
       					</div>
 		      				
 	      			</div>
@@ -93,8 +93,17 @@ get_header(); ?>
 	jQuery(document).ready(function(){
 		jQuery(".progress").before(jQuery("div .wdf_goal"));
 		// get the progress percentage and set our progress bar to it
-		var percentage = jQuery(".wdf_goal_progress").attr("aria-valuenow");
-		jQuery(".progress-bar-danger").width(percentage.concat("%"));
+		if( jQuery(".wdf_goal_progress").length > 1){
+			var val_one = jQuery(".wdf_goal_progress").first().attr("total");
+			var val_two = jQuery(".wdf_goal_progress").last().attr("total");
+			var goal = jQuery(".wdf_goal_progress").first().attr("goal");
+			var total = (val_one + val_two)/goal;
+			jQuery(".progress-bar-danger").width(total);
+		}else{
+			var percentage = jQuery(".wdf_goal_progress").attr("aria-valuenow");
+			jQuery(".progress-bar-danger").width(percentage.concat("%"));
+		}
+
 
 		// move social media to after fighter
 		jQuery("#fight").after(jQuery(".twitter-share-button"));
