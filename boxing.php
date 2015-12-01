@@ -32,16 +32,10 @@ get_header(); ?>
 	      				<div class="boxer_name_title"><?php echo $name ?> v.s. <?php echo $name_two ?></div>	
 	      			</h1>
 
-      				<div class="progress progress-striped col-xs-12">
-						<div class="progress-bar progress-bar-danger active" style="width: 0%;">
-							<span class="sr-only">0% Complete</span>
-						</div>
-					</div>
-
 	      			<div class="fighter_one_outer col-sm-5 fighter">
 	      					<div class="col-xs-12 boxing-top-bar">
-	      						<div class="col-xs-6">
-			      					<img src="<?php echo $pic ?>">
+	      						<div class="col-xs-6 boxer_headshot">
+			      					<img class="boxer_pic" src="<?php echo $pic ?>">
 		      					</div>
 		      					<div class="col-xs-6 boxer-info">
 			      					<h3 class="boxer_name "><?php echo $name; ?></h3>
@@ -63,8 +57,8 @@ get_header(); ?>
 	      			</div>
 	      			<div class="fighter_two_outer col-sm-5 fighter">
 						<div class="col-xs-12 boxing-top-bar">
-							<div class="col-xs-6">
-		      					<img src="<?php echo $pic_two ?>">
+							<div class="col-xs-6 boxer_headshot">
+		      					<img class="boxer_pic" src="<?php echo $pic_two ?>">
 	      					</div>
 	      					<div class="col-xs-6 boxer-info">
 		      					<h3><?php echo $name_two; ?></h3>
@@ -82,6 +76,17 @@ get_header(); ?>
 		      				 </div>
       					</div>
 		      				
+	      			</div>
+	      			<div class="progress-bar-div col-xs-12">
+		      			<div class="progress progress-striped col-xs-12">
+							<div class="progress-bar progress-bar-danger active" style="width: 0%;">
+								<span class="sr-only">0% Complete</span>
+							</div>
+						</div>
+	      			</div>
+
+	      			<div class="col-xs-12 boxer_charity">
+	      				<h2>Learn more about our sponsored charity:<br> <a href="https://www.bowery.org/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/bowery.png"></a></h2>
 	      			</div>
 
 	      	</div>
@@ -103,6 +108,7 @@ get_header(); ?>
 			var goal_two = parseInt(jQuery(".wdf_goal_progress").last().attr("goal"));
 			var total = ((val_one + val_two)/(goal_one + goal_two)) * 100;
 			jQuery(".progress-bar-danger").width(total.toString().concat("%"));
+			jQuery(".progress").before("<h3 class='progress-totals'>$ " + (val_one + val_two) + "/" + (goal_one + goal_two) + "</h3>");
 		}else{
 			var percentage = jQuery(".wdf_goal_progress").attr("aria-valuenow");
 			jQuery(".progress-bar-danger").width(percentage.concat("%"));
@@ -117,6 +123,9 @@ get_header(); ?>
 		jQuery("#fight").after(jQuery(".fb-like"));
 
 		jQuery(".wdf_send_donation").val("Donate!");
+		jQuery(".wdf_send_donation").css({ "background-color": "#dd0000", "color": "black" });
+		jQuery(".wdf_pledge_amount").attr("placeholder", "0.00");
+
 
 	});
 </script>

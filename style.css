@@ -1843,7 +1843,9 @@ div .stats_header{
 
 }
 .fighter img{
-	border-radius: 50%;
+	border-radius: 5px;
+	max-width: 150px;
+	max-height: 150px;
 }
 .fighter_one_outer{
 	float: left;
@@ -1999,6 +2001,25 @@ blockquote:after {
 }
 .boxer-bio hr{
 	border-top: 1px solid #d3d3d3;
+}
+
+#fight .entry-content .entry-content{
+	display: none;
+}
+.boxer_charity img{
+	padding-top: 15px;
+}
+.boxer_charity{
+	text-align: center;
+}
+
+.boxer_headshot{
+	overflow: hidden;
+}
+
+.progress-totals{
+	margin-bottom: 0px;
+	margin-top: 10px;
 }
 /* Hide items from fundraising pannel */
 .wdf_total_backers, .wdf_amount_raised, .wdf_time_left{
