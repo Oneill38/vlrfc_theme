@@ -34,12 +34,12 @@ get_header(); ?>
 
 	      			<div class="fighter_one_outer col-sm-5 fighter">
 	      					<div class="col-xs-12 boxing-top-bar">
-	      						<div class="col-xs-6 boxer_headshot">
-			      					<img class="boxer_pic" src="<?php echo $pic ?>">
+	      						<div class="col-xs-12 boxer-info">
+			      					<div class="col-xs-6"><h3 class="boxer_name "><?php echo $name; ?></h3></div>
+			      					<div class="col-xs-6"><h3 class="boxer_height"><?php echo $height; ?></h3></div>
 		      					</div>
-		      					<div class="col-xs-6 boxer-info">
-			      					<h3 class="boxer_name "><?php echo $name; ?></h3>
-			      					<h3 class="boxer_height"><?php echo $height; ?></h3>
+	      						<div class="col-xs-12 boxer_headshot">
+			      					<img class="boxer_pic" src="<?php echo $pic ?>">
 		      					</div>
 	      					</div>
 
@@ -58,12 +58,12 @@ get_header(); ?>
 	      			</div>
 	      			<div class="fighter_two_outer col-sm-5 fighter">
 						<div class="col-xs-12 boxing-top-bar">
-							<div class="col-xs-6 boxer_headshot">
-		      					<img class="boxer_pic" src="<?php echo $pic_two ?>">
+							<div class="col-xs-12 boxer-info">
+		      					<div class="col-xs-6"><h3><?php echo $name_two; ?></h3></div>
+		      					<div class="col-xs-6"><h3><?php echo $height_two; ?></h3></div>
 	      					</div>
-	      					<div class="col-xs-6 boxer-info">
-		      					<h3><?php echo $name_two; ?></h3>
-		      					<h3><?php echo $height_two; ?></h3>
+							<div class="col-xs-12 boxer_headshot">
+		      					<img class="boxer_pic" src="<?php echo $pic_two ?>">
 	      					</div>
 						</div>
 

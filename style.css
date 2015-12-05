@@ -1844,8 +1844,7 @@ div .stats_header{
 }
 .fighter img{
 	border-radius: 5px;
-	max-width: 150px;
-	max-height: 150px;
+	width: 400px;
 }
 .fighter_one_outer{
 	float: left;
