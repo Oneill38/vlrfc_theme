@@ -4,9 +4,9 @@
 get_header(); ?>
 
 		<div id="fight" class="one-column container-fluid">
-				<div class="featured-image">
+			<a href="http://www.villagelions.org/2015-wcb/"><div class="featured-image">
 					<?php the_post_thumbnail('onecolumn-image', array('title' => get_the_title())); ?>
-				</div>
+				</div></a>
 				<div class="entry-content">
 	      		<?php get_template_part( 'loop', 'page' );
 	      			$name = get_post_meta( $post->ID, '_cmb_name', true );
