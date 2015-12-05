@@ -48,6 +48,7 @@ get_header(); ?>
 			      					if($bio){ echo '<blockquote>' . $bio . '</blockquote>' ;} 
 
 			      				?>
+			      					<input type="text" id="box_knob_one" value="0" class="dial" data-linecap="round" data-fgColor="#dd0000">
 			      				<hr>
 			      				<div class="col-xs-12 donate_one">
 			      					<h3>Donate to <?php echo $name; ?></h3>
@@ -70,6 +71,7 @@ get_header(); ?>
 		      				<?php 
 		      					if($bio_two){ echo '<blockquote>' . $bio_two . '</blockquote>' ;} 
 		      				 ?>
+		      				 	<input type="text" id="box_knob_two" value="0" class="dial" data-linecap="round" data-fgColor="#dd0000">
 		      				 <hr>
 		      				 <div class="col-xs-12 donate_two">
 		      				 	<h3>Donate to <?php echo $name_two; ?></h3>
@@ -107,6 +109,8 @@ get_header(); ?>
 			var goal_one = parseInt(jQuery(".wdf_goal_progress").first().attr("goal"));
 			var goal_two = parseInt(jQuery(".wdf_goal_progress").last().attr("goal"));
 			var total = ((val_one + val_two)/(goal_one + goal_two)) * 100;
+			jQuery("#box_knob_one").val(jQuery(".wdf_goal_progress").first().attr("aria-valuenow"));
+		    jQuery("#box_knob_two").val(jQuery(".wdf_goal_progress").last().attr("aria-valuenow"));
 			jQuery(".progress-bar-danger").width(total.toString().concat("%"));
 			jQuery(".progress").before("<h3 class='progress-totals'>$ " + (val_one + val_two) + "/" + (goal_one + goal_two) + "</h3>");
 		}else{
@@ -125,6 +129,12 @@ get_header(); ?>
 		jQuery(".wdf_send_donation").val("Donate!");
 		jQuery(".wdf_send_donation").css({ "background-color": "#dd0000", "color": "black" });
 		jQuery(".wdf_pledge_amount").attr("placeholder", "0.00");
+
+		jQuery(function() {
+	        jQuery(".dial").knob({
+	        	readOnly: 'true'
+	        });
+	    });
 
 
 	});
