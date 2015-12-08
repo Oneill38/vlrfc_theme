@@ -1827,8 +1827,6 @@ input[type="submit"]:hover {
 }
 .fighter{
 	overflow: hidden;
-	background-color: black;
-	color: white;
 	border-radius: 5px;
 	text-align: center;
 	margin: 5px;
@@ -1845,8 +1843,8 @@ div .stats_header{
 
 }
 .fighter img{
-	border: 3px solid white;
-	max-width: 100%;
+	border-radius: 5px;
+	width: 400px;
 }
 .fighter_one_outer{
 	float: left;
@@ -1860,16 +1858,13 @@ div .stats_header{
 	width: 80%;
 	margin: 10%;
 }
-#fight .wdf_fundraiser_panel{
-	float: left;
-	clear: left;
-}
+
 #fight .wdf_goal_progress{
 	display: none;
 }
 #fight .wdf_goal{
-	display: none;
-}
+/*	display: none;
+*/}
 .single-boxing .entry-title{
 	text-align: center;
 	font-size: 2.923em;
@@ -1878,9 +1873,10 @@ div .stats_header{
 	height: 72px;
 	width: 75px;
 }
-.boxer_name, .boxer_height{
-	margin-bottom: 5px;
-	color: #dd0000;
+.boxer-info{
+	text-align: left;
+	height: 100%;
+	padding-top: 30px;
 }
 .fighter h4{
 	text-align: left;
@@ -1969,6 +1965,64 @@ h4.boxer_info{
 	/*margin-left: 5%;*/
 	padding-left: 25px;
 	padding-right: 25px;
+}
+
+.boxing-top-bar{
+	content: black;
+	background-color: #d3d3d3;
+	padding: 10px;
+}
+.boxer-bio{
+	background-color: #fafafa;
+	padding-bottom: 10px;
+}
+blockquote {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  border-left: none;
+}
+blockquote:before {
+  color: #dd0000;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  color: #dd0000;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.6em;
+}
+.boxer-bio hr{
+	border-top: 1px solid #d3d3d3;
+}
+
+#fight .entry-content .entry-content{
+	display: none;
+}
+.boxer_charity img{
+	padding-top: 15px;
+}
+.boxer_charity{
+	text-align: center;
+}
+
+.boxer_headshot{
+	overflow: hidden;
+}
+
+.progress-totals{
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+/* Hide items from fundraising pannel */
+.wdf_total_backers, .wdf_amount_raised, .wdf_time_left{
+	display: none;
 }
 
 
