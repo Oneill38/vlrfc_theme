@@ -29,7 +29,7 @@ get_header(); ?>
 	      		?>
 	      			
 	      			<h1 class="fight_title">
-	      				<div class="boxer_name_title"><?php echo $name ?> v.s. <?php echo $name_two ?></div>	
+	      				<div class="boxer_name_title"><?php echo $name ?> vs. <?php echo $name_two ?></div>	
 	      			</h1>
 
 	      			<div class="fighter_one_outer col-sm-5 fighter">
