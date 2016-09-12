@@ -2044,4 +2044,29 @@ div#first.widget-area, div#second.widget-area{
 	margin-left: 4%;
 }
 
+/*General Fundraising Page*/
+.give-btn{
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+}
+
+.give-form-wrap{
+	background-color: #f0f0f0;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.give-progress-bar{
+	background-color: gray;
+}
+
+.give-modal .mfp-content{
+	border-radius: 5px;
+}
+
+#give_purchase_form_wrap .give-input{
+	border-radius: 5px;
+}
+
 
